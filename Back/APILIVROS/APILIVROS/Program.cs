@@ -1,4 +1,15 @@
+using APILIVROS.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+var connectionString = builder.Configuration.GetConnectionString("BookConnection");
+builder.Services.AddDbContext<BookContext>(opts =>
+    opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
+);
+
+
 
 // Add services to the container.
 
