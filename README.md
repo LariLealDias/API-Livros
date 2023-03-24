@@ -1,5 +1,5 @@
 # API Livros
-Projeto Back-end de uma API que realiza um CRUD em C# com banco de dados Mysql
+Projeto Back-end de uma API restfull que realiza um CRUD em C# com banco de dados Mysql
 
 ## 🔋 STATUS 
 ![Badge](https://img.shields.io/badge/status-%20finished-brightgreen)
@@ -31,6 +31,7 @@ Uma API relacionada a livros, onde é possível fazer requisições do tipo:
  - Todas as rotas de requisições foram testadas em localhost usando a ferramenta Postman e elas podem ser vista no arquivo postman_collection.json.
  - Uma camada DTO foi desenvolvida para que o modelo de dados não ficasse tão exposto, dessa forma, colaborando com as boas práticas de programação.
  - Foi utilizada a biblioteca AutoMapper para automatizar o mapeamento do objeto de uma camada para outra.
+ - O projeto segue práticas restfull, isto é, cada requisição tem um retorno adequado de acordo com a conveção.
  - Por fim, os dados ficaram armazenados em um banco de dados MySql. 
 <br><br><br>
 
