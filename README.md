@@ -2,7 +2,7 @@
 Projeto Back-end de uma API que realiza um CRUD em C# com banco de dados Mysql
 
 ## 🔋 STATUS 
-![Badge](https://img.shields.io/badge/status-em%20desenvolvimento-yellowgreen)
+![Badge](https://img.shields.io/badge/status-%20finished-brightgreen)
 <br><br><br>
 
 ## 🛠️ FERRAMENTAS 
