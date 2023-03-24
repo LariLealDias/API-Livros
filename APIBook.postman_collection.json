@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "3e0fb495-f6c8-4295-9c01-32e8fd117ef9",
+		"name": "APIBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26405058"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7182/book/3",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    [\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/Title\",\r\n        \"value\": \"Lua nova\"\r\n    }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7182/book/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7182",
+					"path": [
+						"book",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7182/book/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"title\": \"umai\",\r\n        \"gender\": \"outroai\",\r\n        \"author\": \"maisu\",\r\n        \"pages\": \"33\",\r\n        \"publishingHouse\": \"nova\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7182/book/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7182",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7182/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Planeta nvo\",\r\n    \"gender\": \"romance\",\r\n    \"author\": \"Loro ods\",\r\n    \"pages\": \"1400\",\r\n    \"publishingHouse\": \"Dark\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7182/book",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7182",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7182/Book/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7182/Book/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7182",
+					"path": [
+						"Book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
